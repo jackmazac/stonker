@@ -1,7 +1,7 @@
 #include <string>
-
+using namespace std;
 int main() {
-    std::cout << "Hola Amigos, Gilberto" << std::endl;
+    cout << "Hola Amigos, Gilberto" << endl;
 
     return 0;
 }
