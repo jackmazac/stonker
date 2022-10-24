@@ -54,7 +54,6 @@ while True:
             exit()
         if event.type == pygame.MOUSEBUTTONDOWN:
             click_button = click_pos(20) or click_pos(100) or click_pos(180) or click_pos(260) or click_pos(340)
-            close_botton = False
 
     mouse = pygame.mouse.get_pos()
 
