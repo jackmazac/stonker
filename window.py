@@ -13,9 +13,13 @@ def hover_button(screen, color, a):
         pygame.draw.rect(screen, 'Dark Grey', pygame.Rect(10, a, 150, 75), 100, 3)
     pygame.draw.rect(screen, 'Black', pygame.Rect(10, a, 150, 75), 2, 3)
 
-def button(a):
-    pygame.draw.rect(screen, 'Dark Grey', pygame.Rect(10, a, 150, 75), 100, 3)
-    pygame.draw.rect(screen, 'Black', pygame.Rect(10, a, 150, 75), 2, 3)
+def click_pos(a):
+    if 10 <= mouse[0] <= 160 and a <= mouse[1] <= a+75:
+        return True
+
+def button(a,b,x,color):
+    pygame.draw.rect(screen, color, pygame.Rect(10, a, 150, b), x, 3)
+    pygame.draw.rect(screen, 'Black', pygame.Rect(10, a, 150, b), 2, 3)
 
 fig = pylab.figure(figsize=[7,3.95], dpi = 100) 
 
@@ -41,15 +45,17 @@ graph_background = pygame.Surface((700,395))
 graph_background.fill('Black')
 graph = pygame.image.fromstring(raw_data, (700,395), "RGB")
 
-smallfont = pygame.font.SysFont('Corbel', 35)
-text = smallfont.render('clicked', True, 'Black')
+click_button = False
 
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             exit()
-            
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            click_button = click_pos(20) or click_pos(100) or click_pos(180) or click_pos(260) or click_pos(340)
+            close_botton = False
+
     mouse = pygame.mouse.get_pos()
 
     screen.blit(background, (0,0))
@@ -57,10 +63,14 @@ while True:
     screen.blit(graph,(275, 20))
     pygame.draw.rect(screen, 'Black', pygame.Rect(275, 20, 700, 395), 2, 3)
 
-    hover_button(screen, 'Red', 20)
-    hover_button(screen, 'Orange', 100)
-    hover_button(screen, 'Yellow', 180)
-    hover_button(screen, 'Green', 260)
-    hover_button(screen, 'Blue', 340)
+    hover_button(screen, (90,90,90), 20)
+    hover_button(screen, (90,90,90), 100)
+    hover_button(screen, (90,90,90), 180)
+    hover_button(screen, (90,90,90), 260)
+    hover_button(screen, (90,90,90), 340)
+
+    if click_button:
+        button(430, 75, 100, 'White')
+        button(510, 40, 20, 'Green')
 
     pygame.display.update()
