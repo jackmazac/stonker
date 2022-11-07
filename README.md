@@ -8,3 +8,4 @@ https://www.geeksforgeeks.org/how-to-create-buttons-in-a-game-using-pygame/
 https://stackoverflow.com/questions/48093361/using-matplotlib-in-pygame
 https://www.geeksforgeeks.org/visualize-data-from-csv-file-in-python/
 https://www.nasdaq.com/market-activity/stocks/tsla/historical
+https://www.geeksforgeeks.org/how-to-rotate-and-scale-images-using-pygame/#:~:text=To%20scale%20the%20image%20we,manually%20according%20to%20our%20need.
