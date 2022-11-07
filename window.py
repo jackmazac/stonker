@@ -1,10 +1,8 @@
-from turtle import back
 import pygame
 from sys import exit 
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.backends.backend_agg as agg
-import pylab
+import matplotlib.pyplot as plt
+import pandas as pd
+
 
 def hover_button(screen, color, a):
     if 10 <= mouse[0] <= 160 and a <= mouse[1] <= a+75:
@@ -21,15 +19,13 @@ def button(a,b,x,color):
     pygame.draw.rect(screen, color, pygame.Rect(10, a, 150, b), x, 3)
     pygame.draw.rect(screen, 'Black', pygame.Rect(10, a, 150, b), 2, 3)
 
-fig = pylab.figure(figsize=[7,3.95], dpi = 100) 
+data = pd.read_csv('HistoricalData_1666650263854.csv')
 
-ax = fig.gca()
-ax.plot([1,2,4])
+plt.scatter(data['Date'], data['Close/Last'])
 
-canvas = agg.FigureCanvasAgg(fig)
-canvas.draw()
-renderer = canvas.get_renderer()
-raw_data = renderer.tostring_rgb()
+plt.xlabel('Time')
+plt.ylabel('Price')
+
 
 pygame.init()
 
@@ -43,7 +39,7 @@ background.fill('Light Grey')
 
 graph_background = pygame.Surface((700,395))
 graph_background.fill('Black')
-graph = pygame.image.fromstring(raw_data, (700,395), "RGB")
+# graph = pygame.image.fromstring(raw_data, (700,395), "RGB")
 
 click_button = False
 
@@ -59,7 +55,7 @@ while True:
 
     screen.blit(background, (0,0))
     screen.blit(graph_background, (275, 20))
-    screen.blit(graph,(275, 20))
+    #screen.blit(plt.show(),(275, 20))
     pygame.draw.rect(screen, 'Black', pygame.Rect(275, 20, 700, 395), 2, 3)
 
     hover_button(screen, (90,90,90), 20)
