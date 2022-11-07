@@ -1,5 +1,12 @@
 # stonker
 
+# Game Specs
+Screen Size: 1000 x 700
+
+# Directory
+
+
+
 ## The start of something beautiful
 
 Sources

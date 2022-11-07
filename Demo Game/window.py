@@ -7,7 +7,7 @@ from sys import exit
 pygame.init()
 
 # create a display surface -- window players will see
-screen = pygame.display.set_mode((800, 400))  # width, height
+screen = pygame.display.set_mode((1000, 700))  # width, height
 # create a title
 pygame.display.set_caption("Runner")
 
