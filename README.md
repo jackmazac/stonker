@@ -19,10 +19,14 @@
 
 # Directory
 
-- Media: Contains all media used in the game
-- Scripts: Contains all python scripts that the game will run
-- Files: Contains all non code files related to the project
-- CSVFiles: Contains all CSV files that are related to the game
+- Media
+  - Contains all media used in the game
+- Scripts
+  - Contains all python scripts that the game will run
+- Files
+  - Contains all non code files related to the project
+- CSVFiles
+  - Contains all CSV files that are related to the game
 
 # Scripts
 
@@ -97,6 +101,23 @@
 - Clickable buttons that open and close drop down menus
 - Working backend
 - Educational materials have been decided–yet to be implemented
+
+# Plans for the future
+
+### Goals
+
+- Add interactive elements so the users can actually play the game
+- Implement educational aspects of the game
+- Possibly widen the availability of the program
+  - Host website containing the game on github
+- Potentially convert databases to a mySQL database so questioning and querying the data would be much simpler
+
+### Tasks
+
+- Add screens that teach users about the stock market
+- Connect databases with the screens
+- Allow for users to input and interact with the stock market data
+- Add a testing feature to allow users to see how much they’ve learned by playing this game
 
 # Sources
 
