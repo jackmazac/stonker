@@ -58,7 +58,7 @@
 
 # Contributions
 
-- Ponthea Zahraii @pontheazahraii
+- Ponthea Zahraii
   - Created front end using pygames and matplotlib
     - Graphed historical stock data for TSLA
     - Created visuals for the main menu for the game
