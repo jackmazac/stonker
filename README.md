@@ -28,7 +28,7 @@
 - CSVFiles
   - Contains all CSV files that are related to the game
 
-# Scripts
+# Code
 
 - AssetSelectionMenu.py
   - Will contain the code for the asset selection menu
@@ -66,6 +66,7 @@
   - Planned how the classes were going to be organized
 - Gilberto Arellano
   - Created the backlog
+  - Created Menu (button animation, arcade music), under Code/Gil's Code
 - Daniel Boudigan
   - Created, in detail, the script for the educational aspects of the game
   - Finalized the storyboard and how the game should progress
