@@ -1,3 +1,7 @@
+
+#this file its to take care of main game logic 
+#that is to say all high level actions the player can take will be 
+#directed to other files/classes
 import pygame
 import TradingMenu
 pygame.init()
@@ -21,20 +25,19 @@ while True:
             pygame.quit()
             exit()
         if event.type == pygame.MOUSEBUTTONDOWN:
+            #check asset selection "AssetSelectionMenu.CheckInput()"
+            #check Trading menu input "TradingMenu.CheckInput()"
             click_button = TradingMenu.click_pos(20) or TradingMenu.click_pos(100) or TradingMenu.click_pos(180) or TradingMenu.click_pos(260) or TradingMenu.click_pos(340)
 
-    
+    #AssetSelectionMenu.Draw()
+    #AssetSelectionMenu.CheckInput()
 
+    #draw asset selection Menu"AssetSelectonMenu.Draw()"
     screen.blit(background, (0,0))
     screen.blit(graph_background, (275, 20))
     #screen.blit(graph,(275, 20))
     pygame.draw.rect(screen, 'Black', pygame.Rect(275, 20, 700, 395), 2, 3)
 
-    TradingMenu.hover_button(screen, (90,90,90), 20)
-    TradingMenu.hover_button(screen, (90,90,90), 100)
-    TradingMenu.hover_button(screen, (90,90,90), 180)
-    TradingMenu.hover_button(screen, (90,90,90), 260)
-    TradingMenu.hover_button(screen, (90,90,90), 340)
 
     if click_button:
         TradingMenu.button(430, 75, 100, 'White',screen)
