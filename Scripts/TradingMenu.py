@@ -1,3 +1,5 @@
+#script pertaining to the trading options for the currently selected stock
+
 from turtle import back
 import pygame
 
