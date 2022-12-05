@@ -1,3 +1,4 @@
+
 #Once asset is selected then the trading graph should 
 #pop up along with trading menu.
 from turtle import back
