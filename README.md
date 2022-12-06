@@ -103,7 +103,7 @@
 - Working backend
 - Educational materials have been decided–yet to be implemented
 
-#### Roadblocks 
+### Roadblocks 
 
 - Pygames is not a popular library that is used, therefore finding resources online to help us has been very limited 
   - Has made simple debugging questions very time consuming
