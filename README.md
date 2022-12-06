@@ -132,10 +132,28 @@
 # Sources
 
 - https://www.geeksforgeeks.org/how-to-draw-rectangle-in-pygame/
+  - window.py
+  - Used to create rectangles on the main window screen of the game 
 - https://www.geeksforgeeks.org/how-to-create-buttons-in-a-game-using-pygame/
+  - window.py 
+  - Used to create buttons to select stocks and bring drop down menu 
 - https://stackoverflow.com/questions/48093361/using-matplotlib-in-pygame
+  - window.py 
+  - Used to figure out how to use matplotlib to plot TSLA data 
 - https://www.geeksforgeeks.org/visualize-data-from-csv-file-in-python/
+  - window.py 
+  - Used to read info from the TSLA historical data CSV file to plot using matplotlib
 - https://www.nasdaq.com/market-activity/stocks/tsla/historical
+  - window.py 
+  - The historical TSLA stock dataset used in the game 
 - https://www.geeksforgeeks.org/how-to-rotate-and-scale-images-using-pygame/#:~:text=To%20scale%20the%20image%20we,manually%20according%20to%20our%20need.
+  - window.py 
+  - Used to scale the background for the window 
 - https://www.w3schools.com/python/matplotlib_pyplot.asp
+  - window.py 
+  - Further understand how matplotlib works to create plots 
 - https://www.tutorialspoint.com/plot-data-from-csv-file-with-matplotlib
+  - window.py
+  - Used to read data from the CSV file to plot with matplotlib 
+- https://www.youtube.com/watch?v=AY9MnQ4x3zk&t=4525s
+  - Tutorial used to educate ourselves on how to use the pygame library 
