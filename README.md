@@ -21,7 +21,7 @@
 
 - Media
   - Contains all media used in the game
-- Scripts
+- Code
   - Contains all python scripts that the game will run
 - Files
   - Contains all non code files related to the project
