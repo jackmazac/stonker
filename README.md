@@ -103,6 +103,15 @@
 - Working backend
 - Educational materials have been decided–yet to be implemented
 
+#### Roadblocks 
+
+- Pygames is not a popular library that is used, therefore finding resources online to help us has been very limited 
+  - Has made simple debugging questions very time consuming
+  - Unable to find a way to put a plot on the screen without the entire program crashing 
+- Learning curve with pandas
+- Laziness and lack of communication within the team 
+- Different experience levels with coding/finance
+
 # Plans for the future
 
 ### Goals
