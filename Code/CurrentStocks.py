@@ -1,3 +1,4 @@
+##CURRENT STOCK SHOULD BE STORED IN PLAYER CLASS##
 import yfinance as yf
 
 
