@@ -68,7 +68,7 @@
   - Planned how the classes were going to be organized
 - Gilberto Arellano
   - Created the backlog
-  - Created Menu, located in (Code/Gil's Code)[https://github.com/jackmazac/stonker/tree/main/Code/Gil's%20Code]
+  - Created Menu, located in [Code/Gil's Code](https://github.com/jackmazac/stonker/tree/main/Code/Gil's%20Code)
 - Daniel Boudigan
   - Created, in detail, the script for the educational aspects of the game
   - Finalized the storyboard and how the game should progress
