@@ -103,16 +103,25 @@
 - Working backend
 - Educational materials have been decided–yet to be implemented
 
-# Roadblocks 
+# Roadblocks
 
-- Pygames is not a popular library that is used, therefore finding resources online to help us has been very limited 
+- Pygames is not a popular library that is used, therefore finding resources online to help us has been very limited
   - Has made simple debugging questions very time consuming
-  - Unable to find a way to put a plot on the screen without the entire program crashing 
+  - Unable to find a way to put a plot on the screen without the entire program crashing
 - Learning curve with pandas
-- Laziness and lack of communication within the team 
+- Laziness and lack of communication within the team
 - Different experience levels with coding/finance
 
 # Plans for the future
+
+### First Priority
+
+Our first priority is to figure out how to add a matplotlib onto the screen
+
+- We can use a picture of the graph instead of a graph
+  - This would be a last ditch effort, I would not sugget this unless we have no other options
+- We can search through the pygame documentation and test out the different methods that are listed
+  - try all the methods that we searched through until we find one that works
 
 ### Goals
 
@@ -133,27 +142,27 @@
 
 - https://www.geeksforgeeks.org/how-to-draw-rectangle-in-pygame/
   - window.py
-  - Used to create rectangles on the main window screen of the game 
+  - Used to create rectangles on the main window screen of the game
 - https://www.geeksforgeeks.org/how-to-create-buttons-in-a-game-using-pygame/
-  - window.py 
-  - Used to create buttons to select stocks and bring drop down menu 
+  - window.py
+  - Used to create buttons to select stocks and bring drop down menu
 - https://stackoverflow.com/questions/48093361/using-matplotlib-in-pygame
-  - window.py 
-  - Used to figure out how to use matplotlib to plot TSLA data 
+  - window.py
+  - Used to figure out how to use matplotlib to plot TSLA data
 - https://www.geeksforgeeks.org/visualize-data-from-csv-file-in-python/
-  - window.py 
+  - window.py
   - Used to read info from the TSLA historical data CSV file to plot using matplotlib
 - https://www.nasdaq.com/market-activity/stocks/tsla/historical
-  - window.py 
-  - The historical TSLA stock dataset used in the game 
+  - window.py
+  - The historical TSLA stock dataset used in the game
 - https://www.geeksforgeeks.org/how-to-rotate-and-scale-images-using-pygame/#:~:text=To%20scale%20the%20image%20we,manually%20according%20to%20our%20need.
-  - window.py 
-  - Used to scale the background for the window 
+  - window.py
+  - Used to scale the background for the window
 - https://www.w3schools.com/python/matplotlib_pyplot.asp
-  - window.py 
-  - Further understand how matplotlib works to create plots 
+  - window.py
+  - Further understand how matplotlib works to create plots
 - https://www.tutorialspoint.com/plot-data-from-csv-file-with-matplotlib
   - window.py
-  - Used to read data from the CSV file to plot with matplotlib 
+  - Used to read data from the CSV file to plot with matplotlib
 - https://www.youtube.com/watch?v=AY9MnQ4x3zk&t=4525s
-  - Tutorial used to educate ourselves on how to use the pygame library 
+  - Tutorial used to educate ourselves on how to use the pygame library
